@@ -126,12 +126,12 @@ public class WarnetZalnamustika {
                 harga = 4000;
                 lama = JamKeluar - JamMasuk;
                 if(lama>2){
-                 potongan =  (harga * 0.02);
+                 potongan =  harga * 0.02;
                  Tarif = Tarif * potongan;
                  Total = lama * Tarif - potongan;
                 }else{
-                 potongan = (harga * 0);
-                 Tarif = Tarif * potongan;
+                 potongan = harga * 0;
+                 Tarif = harga * potongan;
                  Total = lama * Tarif - potongan;
                 } 
                 break;
@@ -139,12 +139,12 @@ public class WarnetZalnamustika {
                 harga = 6000;
                 lama = JamKeluar - JamMasuk;
                 if(lama>2){
-                 potongan = (int) (harga * 0.05);
-                 Tarif = Tarif * potongan;
+                 potongan = harga * 0.05;
+                 Tarif = harga * potongan;
                  Total = lama * Tarif - potongan;
                 }else{
-                 potongan = (int) (harga * 0);
-                 Tarif = Tarif * potongan;
+                 potongan = harga * 0;
+                 Tarif = harga * potongan;
                  Total = lama * Tarif - potongan;
                 } 
                 break;
